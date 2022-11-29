@@ -20,7 +20,6 @@ HEADER
 ================================ */
 
 header {
-  background-color: red;
   padding: 7%;
   display: flex;
   flex-direction: row;
@@ -39,7 +38,7 @@ TOP DIV
   background-image: url(./assets/graphic.svg);
   background-size: contain;
   /* position kartu su size kitaip neatitaikiau kad atrodytu pixelis i pixelio 320px width */
-  background-position: right -154px top 0px;
+  background-position: right -154px top -5px;
   background-repeat: no-repeat;
 }
 
@@ -50,6 +49,31 @@ TOP DIV
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+
+#top-content span {
+  color: var(--color-pink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#top-content p {
+  color: var(--color-grey);
+}
+
+#top-content button {
+  width: 130px;
+  height: 50px;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #ffffff;
+  border: solid 3px transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #ff3998, #ff3939, #ff8139);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 /* ======================================================
