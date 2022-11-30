@@ -1,5 +1,4 @@
 :root {
-  --color-black: #111111;
   --color-pink: #ff3998;
   --color-grey: #8b8b8b;
 }
@@ -93,4 +92,104 @@ MIDDLE DIV
   background-image: url(./assets/background.svg);
   background-size: cover;
   background-position: 20%;
+}
+
+/* ==========================================================
+ICON DIV
+=========================================================== */
+
+#icons {
+  padding: 10% 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 10px;
+}
+
+#icons img {
+  height: 50px;
+  width: 70%;
+}
+
+/* ==========================================================
+AUCTION DIV
+=========================================================== */
+#auction {
+  height: 200px;
+  padding: 0 0 0 7%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  color: black;
+}
+
+#auction a {
+  color: var(--color-grey);
+}
+
+/* ==========================================================
+NFTS DIV
+=========================================================== */
+
+#nfts {
+  padding: 0 0 0 7%;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  flex-wrap: wrap;
+  /* overflow: hidden; */
+  column-gap: 20px;
+}
+
+#box1 {
+  width: 230px;
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(./assets/ntfs/ntf-1.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+#box2 {
+  width: 230px;
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(./assets/ntfs/nft-2.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+#box3 {
+  width: 230px;
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(./assets/ntfs/ntf-3.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+#box4 {
+  width: 230px;
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(./assets/ntfs/ntf-4.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+.insidebox {
+  position: relative;
+  bottom: -80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
 }
