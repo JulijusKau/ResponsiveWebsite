@@ -348,6 +348,7 @@ HEADER
   TOP DIV
   =================================================== */
 
+  /* BACKGROUND IMAGE SULUZES ANT VIRSUTINIO */
   #top {
     background-position: right top;
     background-size: 60%;
@@ -374,7 +375,6 @@ HEADER
   /* ======================================================
   MIDDLE DIV
   ====================================================== */
-  /* SITAS SULUZES ANT EKSTRA DIDELIO */
   #free {
     background-size: 86%;
     background-position: center;
@@ -425,27 +425,14 @@ HEADER
   NO OTHER DIV
   =========================================================== */
   #no-other {
-    height: 100%;
-    padding: 10% 45% 20% 7%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    border-top: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
-    background-image: url(./assets/upsell-footer-image.svg);
-    background-repeat: no-repeat;
-    background-size: 80% 90%;
-    background-position: right -70px top 60px;
+    background-size: 100% 100%;
+    background-position: right -250px top 30px;
   }
-
+  #no-other h1 {
+    font-size: 50px;
+  }
   #no-other span {
-    color: var(--color-pink);
-    font-size: 13px;
-    font-weight: 700;
-  }
-
-  #no-other p {
-    color: var(--color-grey);
+    font-size: 15px;
   }
 
   /* ==========================================================
