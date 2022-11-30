@@ -1,6 +1,7 @@
 :root {
   --color-pink: #ff3998;
   --color-grey: #8b8b8b;
+  --color-peach: #ff8139;
 }
 
 * {
@@ -120,7 +121,7 @@ AUCTION DIV
 =========================================================== */
 #auction {
   height: 200px;
-  padding: 0 0 0 7%;
+  padding: 0 7%;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -190,11 +191,41 @@ NFTS DIV
 }
 
 .insidebox {
-  height: 300px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  color: red;
+  padding: 97% 0% 0% 8%;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  column-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gloop {
+  color: var(--color-peach);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.name,
+.crypto {
+  font-weight: 600;
+}
+
+.crypto img {
+  width: 8%;
+}
+
+.bid {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color-grey);
+}
+
+.number,
+.daysleft {
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /* ==========================================================
