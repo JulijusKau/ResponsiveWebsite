@@ -137,7 +137,7 @@ NFTS DIV
   flex-direction: column;
   height: 300px;
   flex-wrap: wrap;
-  /* overflow: hidden; */
+  overflow: hidden;
   column-gap: 20px;
 }
 
