@@ -37,6 +37,11 @@ header img {
   height: 10%;
   width: 10%;
 }
+
+header nav {
+  display: none;
+}
+
 /* ===================================================
 TOP DIV
 =================================================== */
@@ -342,6 +347,23 @@ HEADER
 
   #burgericon {
     display: none;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-grey);
+  }
+  header nav a:last-child {
+    color: var(--color-pink);
   }
 
   /* ===================================================
