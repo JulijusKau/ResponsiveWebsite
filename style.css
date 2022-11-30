@@ -61,9 +61,10 @@ TOP DIV
 
 #top-content p {
   color: var(--color-grey);
+  width: 204px;
 }
 
-#top-content button {
+.signup {
   width: 130px;
   height: 50px;
   color: black;
@@ -132,7 +133,7 @@ NFTS DIV
 =========================================================== */
 
 #nfts {
-  padding: 0 0 0 7%;
+  padding: 0 0 25% 7%;
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -184,3 +185,50 @@ NFTS DIV
   background-size: contain;
   border-radius: 15px;
 }
+
+.insidebox {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: red;
+}
+
+/* ==========================================================
+NO OTHER DIV
+=========================================================== */
+#no-other {
+  height: 100%;
+  padding: 10% 45% 20% 7%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  /* PASIZET GAL TRUMPIAU BORDERI GALIU APSIRASYT */
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  background-image: url(./assets/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-size: 80% 90%;
+  background-position: right -70px top 60px;
+}
+
+#no-other span {
+  color: var(--color-pink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#no-other p {
+  color: var(--color-grey);
+}
+
+/* ==========================================================
+LAST DIV
+=========================================================== */
+#last-div {
+  height: 200px;
+}
+
+/* ==========================================================
+FOOTER
+=========================================================== */
