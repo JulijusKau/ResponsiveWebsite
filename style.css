@@ -184,12 +184,3 @@ NFTS DIV
   background-size: contain;
   border-radius: 15px;
 }
-
-.insidebox {
-  position: relative;
-  bottom: -80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  color: white;
-}
