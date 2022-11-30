@@ -459,54 +459,28 @@ HEADER
   LAST DIV1
   =========================================================== */
   #last-div1 {
-    padding: 15% 0 0 7%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-  }
-
-  #last-div1 span {
-    color: var(--color-grey);
-  }
-
-  #last-div1 img {
-    width: 50%;
-  }
-
-  #eth {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
-    column-gap: 20px;
-  }
-
-  #eth img {
-    width: 7%;
+    padding: 7%;
+    width: 40%;
   }
   /* ==========================================================
   LAST DIV2
   =========================================================== */
+  #uniting-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   #last-div2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10% 0 0 7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 7% 0 0 7%;
+    column-gap: 20px;
   }
 
   #last-div2 > div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    padding: 12% 0;
-    color: var(--color-grey);
-  }
-
-  #last-div2 > div span {
-    font-weight: 700;
-  }
-
-  #last-div2 > div a {
-    text-decoration: none;
-    color: var(--color-grey);
+    padding: 0 0 0 7%;
   }
 
   /* ==========================================================
