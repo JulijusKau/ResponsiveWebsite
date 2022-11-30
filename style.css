@@ -1,7 +1,7 @@
 :root {
-  --color-black: #111111;
   --color-pink: #ff3998;
   --color-grey: #8b8b8b;
+  --color-peach: #ff8139;
 }
 
 * {
@@ -14,13 +14,15 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+/* ===================================
+FROM 320 PX MOBILE S
+=================================== */
 
 /* ================================
 HEADER
 ================================ */
 
 header {
-  background-color: red;
   padding: 7%;
   display: flex;
   flex-direction: row;
@@ -31,6 +33,15 @@ header img {
   width: 50%;
 }
 
+#burgericon {
+  height: 10%;
+  width: 10%;
+}
+
+header nav {
+  display: none;
+}
+
 /* ===================================================
 TOP DIV
 =================================================== */
@@ -38,12 +49,9 @@ TOP DIV
 #top {
   background-image: url(./assets/graphic.svg);
   background-size: contain;
-  /* position kartu su size kitaip neatitaikiau kad atrodytu pixelis i pixelio 320px width */
-  background-position: right -154px top 0px;
+  background-position: right -154px top -5px;
   background-repeat: no-repeat;
 }
-
-/* SITA LIUX ATITAIKIAU ANT 320px */
 
 #top-content {
   padding: 20% 30% 20% 7%;
@@ -52,11 +60,438 @@ TOP DIV
   row-gap: 20px;
 }
 
+#top-content span {
+  color: var(--color-pink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#top-content p {
+  color: var(--color-grey);
+  width: 204px;
+}
+
+.signup {
+  width: 130px;
+  height: 50px;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #ffffff;
+  border: solid 3px transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #ff3998, #ff3939, #ff8139);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  cursor: pointer;
+}
+
 /* ======================================================
 MIDDLE DIV
 ====================================================== */
 
-/* #free {
+#free {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 15px;
+  padding: 7%;
   background-image: url(./assets/background.svg);
   background-size: cover;
-} */
+  background-position: 20%;
+}
+
+/* ==========================================================
+ICON DIV
+=========================================================== */
+
+#icons {
+  padding: 10% 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 10px;
+}
+
+#icons img {
+  height: 50px;
+  width: 70%;
+}
+
+/* ==========================================================
+AUCTION DIV
+=========================================================== */
+#auction {
+  height: 200px;
+  padding: 0 7%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#auction a {
+  color: var(--color-grey);
+}
+
+/* ==========================================================
+NFTS DIV
+=========================================================== */
+
+#nfts {
+  padding: 0 0 25% 7%;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  column-gap: 20px;
+}
+
+#box1 {
+  width: 230px;
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(./assets/ntfs/ntf-1.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+#box2 {
+  width: 230px;
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(./assets/ntfs/nft-2.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+#box3 {
+  width: 230px;
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(./assets/ntfs/ntf-3.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+#box4 {
+  width: 230px;
+  height: 300px;
+  background-color: lightgray;
+  background-image: url(./assets/ntfs/ntf-4.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  border-radius: 15px;
+}
+
+.insidebox {
+  width: 100%;
+  padding: 97% 0% 0% 8%;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  column-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gloop {
+  color: var(--color-peach);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.name,
+.crypto {
+  font-weight: 600;
+}
+
+.crypto img {
+  width: 8%;
+}
+
+.bid {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color-grey);
+}
+
+.number,
+.daysleft {
+  color: var(--color-grey);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ==========================================================
+NO OTHER DIV
+=========================================================== */
+#no-other {
+  height: 100%;
+  padding: 10% 45% 20% 7%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  background-image: url(./assets/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-size: 80% 90%;
+  background-position: right -70px top 60px;
+}
+
+#no-other span {
+  color: var(--color-pink);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#no-other p {
+  color: var(--color-grey);
+}
+
+/* ==========================================================
+LAST DIV1
+=========================================================== */
+#last-div1 {
+  padding: 15% 0 0 7%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+#last-div1 span {
+  color: var(--color-grey);
+}
+
+#last-div1 img {
+  width: 50%;
+}
+
+#eth {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  column-gap: 20px;
+}
+
+#eth img {
+  width: 7%;
+}
+/* ==========================================================
+LAST DIV2
+=========================================================== */
+#last-div2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10% 0 0 7%;
+}
+
+#last-div2 > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 12% 0;
+  color: var(--color-grey);
+}
+
+#last-div2 > div span {
+  font-weight: 700;
+}
+
+#last-div2 > div a {
+  text-decoration: none;
+  color: var(--color-grey);
+}
+
+/* ==========================================================
+FOOTER
+=========================================================== */
+
+footer {
+  color: var(--color-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10% 0 10% 7%;
+}
+
+footer :nth-child(2) {
+  display: none;
+}
+
+/* =================================
+TOLIAU NUO 1024 PX KADANGI TABLET NEREIKIA
+======================================== */
+
+@media only screen and (min-width: 1024px) {
+  /* ================================
+HEADER
+================================ */
+
+  header {
+    padding: 5% 7% 0 7%;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  #burgericon {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-grey);
+  }
+  header nav a:last-child {
+    color: var(--color-pink);
+  }
+
+  /* ===================================================
+  TOP DIV
+  =================================================== */
+
+  #top {
+    background-size: 80% 100%;
+  }
+
+  #top-content {
+    padding: 100px 7%;
+    width: 38%;
+  }
+
+  #top-content span {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  #top-content h1 {
+    font-size: 70px;
+  }
+
+  #top-content p {
+    width: 100%;
+  }
+
+  /* ======================================================
+  MIDDLE DIV
+  ====================================================== */
+  #free {
+    background-size: 86%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 10% 7%;
+  }
+
+  /* ==========================================================
+  ICON DIV
+  =========================================================== */
+
+  #icons {
+    padding: 7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  #icons img {
+    max-width: max-content;
+  }
+
+  /* ==========================================================
+  AUCTION DIV
+  =========================================================== */
+  #auction {
+    height: max-content;
+    padding: 3% 7%;
+    row-gap: 20px;
+  }
+
+  /* ==========================================================
+  NFTS DIV
+  =========================================================== */
+
+  #nfts {
+    padding: 0 7% 7% 7%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+    flex-wrap: wrap;
+    row-gap: 80px;
+  }
+
+  /* ==========================================================
+  NO OTHER DIV
+  =========================================================== */
+  #no-other {
+    background-size: 100% 100%;
+    background-position: right -250px top 30px;
+  }
+  #no-other h1 {
+    font-size: 50px;
+  }
+  #no-other span {
+    font-size: 15px;
+  }
+
+  /* ==========================================================
+  LAST DIV1
+  =========================================================== */
+  #last-div1 {
+    padding: 7%;
+    width: 40%;
+  }
+  /* ==========================================================
+  LAST DIV2
+  =========================================================== */
+  #uniting-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #last-div2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 7% 0 0 7%;
+    column-gap: 20px;
+  }
+
+  #last-div2 > div {
+    padding: 0 0 0 7%;
+  }
+
+  /* ==========================================================
+  FOOTER
+  =========================================================== */
+
+  footer {
+    padding: 5% 7%;
+  }
+
+  footer :nth-child(2) {
+    display: block;
+  }
+}
