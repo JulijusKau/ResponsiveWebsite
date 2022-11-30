@@ -348,10 +348,8 @@ HEADER
   TOP DIV
   =================================================== */
 
-  /* BACKGROUND IMAGE SULUZES ANT VIRSUTINIO */
   #top {
-    background-position: right top;
-    background-size: 60%;
+    background-size: 80% 100%;
   }
 
   #top-content {
@@ -494,14 +492,10 @@ HEADER
   =========================================================== */
 
   footer {
-    color: var(--color-grey);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10% 0 10% 7%;
+    padding: 5% 7%;
   }
 
   footer :nth-child(2) {
-    display: none;
+    display: block;
   }
 }
