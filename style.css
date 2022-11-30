@@ -44,7 +44,6 @@ TOP DIV
 #top {
   background-image: url(./assets/graphic.svg);
   background-size: contain;
-  /* position kartu su size kitaip neatitaikiau kad atrodytu pixelis i pixelio 320px width */
   background-position: right -154px top -5px;
   background-repeat: no-repeat;
 }
@@ -237,7 +236,6 @@ NO OTHER DIV
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  /* PASIZET GAL TRUMPIAU BORDERI GALIU APSIRASYT */
   border-top: 2px solid lightgray;
   border-bottom: 2px solid lightgray;
   background-image: url(./assets/upsell-footer-image.svg);
@@ -324,4 +322,295 @@ footer {
 
 footer :nth-child(2) {
   display: none;
+}
+
+/* =================================
+TOLIAU NUO 1024 PX KADANGI TABLET NEREIKIA
+======================================== */
+
+@media only screen and (min-width: 1024px) {
+  /* ================================
+HEADER
+================================ */
+
+  header {
+    padding: 5% 7% 0 7%;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  #burgericon {
+    display: none;
+  }
+
+  /* ===================================================
+  TOP DIV
+  =================================================== */
+
+  #top {
+    background-position: right top;
+    background-size: 60%;
+  }
+
+  #top-content {
+    padding: 100px 7%;
+    width: 38%;
+  }
+
+  #top-content span {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  #top-content h1 {
+    font-size: 60px;
+  }
+
+  #top-content p {
+    width: 100%;
+  }
+
+  /* ======================================================
+  MIDDLE DIV
+  ====================================================== */
+
+  #free {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 15px;
+    padding: 7%;
+    background-image: url(./assets/background.svg);
+    background-size: cover;
+    background-position: 20%;
+  }
+
+  /* ==========================================================
+  ICON DIV
+  =========================================================== */
+
+  #icons {
+    padding: 10% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 10px;
+  }
+
+  #icons img {
+    height: 50px;
+    width: 70%;
+  }
+
+  /* ==========================================================
+  AUCTION DIV
+  =========================================================== */
+  #auction {
+    height: 200px;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: black;
+  }
+
+  #auction a {
+    color: var(--color-grey);
+  }
+
+  /* ==========================================================
+  NFTS DIV
+  =========================================================== */
+
+  #nfts {
+    padding: 0 0 25% 7%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    column-gap: 20px;
+  }
+
+  #box1 {
+    width: 230px;
+    height: 300px;
+    background-color: lightgray;
+    background-image: url(./assets/ntfs/ntf-1.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    border-radius: 15px;
+  }
+
+  #box2 {
+    width: 230px;
+    height: 300px;
+    background-color: lightgray;
+    background-image: url(./assets/ntfs/nft-2.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    border-radius: 15px;
+  }
+
+  #box3 {
+    width: 230px;
+    height: 300px;
+    background-color: lightgray;
+    background-image: url(./assets/ntfs/ntf-3.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    border-radius: 15px;
+  }
+
+  #box4 {
+    width: 230px;
+    height: 300px;
+    background-color: lightgray;
+    background-image: url(./assets/ntfs/ntf-4.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    border-radius: 15px;
+  }
+
+  .insidebox {
+    width: 100%;
+    padding: 97% 0% 0% 8%;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    column-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gloop {
+    color: var(--color-peach);
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .name,
+  .crypto {
+    font-weight: 600;
+  }
+
+  .crypto img {
+    width: 8%;
+  }
+
+  .bid {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--color-grey);
+  }
+
+  .number,
+  .daysleft {
+    color: var(--color-grey);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* ==========================================================
+  NO OTHER DIV
+  =========================================================== */
+  #no-other {
+    height: 100%;
+    padding: 10% 45% 20% 7%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    background-image: url(./assets/upsell-footer-image.svg);
+    background-repeat: no-repeat;
+    background-size: 80% 90%;
+    background-position: right -70px top 60px;
+  }
+
+  #no-other span {
+    color: var(--color-pink);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  #no-other p {
+    color: var(--color-grey);
+  }
+
+  /* ==========================================================
+  LAST DIV1
+  =========================================================== */
+  #last-div1 {
+    padding: 15% 0 0 7%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  #last-div1 span {
+    color: var(--color-grey);
+  }
+
+  #last-div1 img {
+    width: 50%;
+  }
+
+  #eth {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    column-gap: 20px;
+  }
+
+  #eth img {
+    width: 7%;
+  }
+  /* ==========================================================
+  LAST DIV2
+  =========================================================== */
+  #last-div2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10% 0 0 7%;
+  }
+
+  #last-div2 > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 12% 0;
+    color: var(--color-grey);
+  }
+
+  #last-div2 > div span {
+    font-weight: 700;
+  }
+
+  #last-div2 > div a {
+    text-decoration: none;
+    color: var(--color-grey);
+  }
+
+  /* ==========================================================
+  FOOTER
+  =========================================================== */
+
+  footer {
+    color: var(--color-grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10% 0 10% 7%;
+  }
+
+  footer :nth-child(2) {
+    display: none;
+  }
 }
