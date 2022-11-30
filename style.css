@@ -32,6 +32,10 @@ header img {
   width: 50%;
 }
 
+#burgericon {
+  height: 10%;
+  width: 10%;
+}
 /* ===================================================
 TOP DIV
 =================================================== */
@@ -43,8 +47,6 @@ TOP DIV
   background-position: right -154px top -5px;
   background-repeat: no-repeat;
 }
-
-/* SITA LIUX ATITAIKIAU ANT 320px */
 
 #top-content {
   padding: 20% 30% 20% 7%;
